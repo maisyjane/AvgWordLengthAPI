@@ -1,4 +1,4 @@
-image: mcr.microsoft.com/dotnet/core/sdk
+image: mcr.microsoft.com/dotnet/core/sdk:5.0.403
 
 stages:
     - test
