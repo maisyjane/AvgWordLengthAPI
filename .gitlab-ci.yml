@@ -1,0 +1,10 @@
+image: microsoft/dotnet:latest
+
+stages:
+    - test
+
+test:
+    stage: test
+    script: 
+        - "cd avg_word_length.Tests"
+        - "dotnet test"
