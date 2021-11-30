@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{855F3F17-EDDA-45A5-AD57-D57C3E7A0837}"
 	ProjectSection(SolutionItems) = preProject
 		.gitlab-ci.yml = .gitlab-ci.yml
+		avg_word_length\Dockerfile = avg_word_length\Dockerfile
 	EndProjectSection
 EndProject
 Global
