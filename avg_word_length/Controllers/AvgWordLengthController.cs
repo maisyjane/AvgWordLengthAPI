@@ -20,7 +20,7 @@ namespace avg_word_length.Controllers
             Response.StatusCode = 404;
             return new ErrorResponse
             {
-                errorMessage = "404 not found - No paramters supplied",
+                errorMessage = "404 not found - No parameters supplied",
                 isError = true,
                 statusCode = 404,
                         
