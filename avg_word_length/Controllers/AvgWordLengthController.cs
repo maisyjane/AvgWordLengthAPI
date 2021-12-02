@@ -38,7 +38,7 @@ namespace avg_word_length.Controllers
                 int letterCounter = 0;
                 foreach (char c in input_text.ToCharArray())
                 {
-                    if (Char.IsLetter(c)) { letterCounter++; }
+                    if (Char.IsLetter(c) && !Char.IsPunctuation(c)) { letterCounter++; }
 
                 }
 

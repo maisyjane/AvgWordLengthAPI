@@ -20,7 +20,8 @@ namespace avg_word_length
                 invalidWord = false;
                 foreach (char c in wordList[i].ToCharArray())
                 {
-                    if (char.IsDigit(c)) { invalidWord = true; break; }
+                  
+                    if (!char.IsLetter(c)) { invalidWord = true; break; }
 
                 }
                 if (invalidWord) { wordList.RemoveAt(i); }
