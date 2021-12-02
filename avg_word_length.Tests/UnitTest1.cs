@@ -1,17 +1,13 @@
 using avg_word_length.Controllers;
 using System;
 using Xunit;
+using Microsoft.AspNetCore.Mvc;
 
 namespace avg_word_length.Tests
 {
     public class AverageWordLengthTests
+    //makemock server and pass in create factory
     {
-        //[Fact]
-        //public void TestController()
-        //{
-          //  var controller = new AvgWordLengthController();
-
-        //}
 
         [Fact]
         public void TestAverageLength_correct_parameters()

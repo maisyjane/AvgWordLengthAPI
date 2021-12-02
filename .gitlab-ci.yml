@@ -8,3 +8,6 @@ test:
     script: 
         - "cd avg_word_length.Tests"
         - "dotnet test"
+        - "cd .."
+        - "cd avg_word_length.IntegrationTests"
+        - "dotnet test"
