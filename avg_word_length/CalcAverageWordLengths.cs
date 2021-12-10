@@ -32,8 +32,9 @@ namespace avg_word_length
             else { averageLength = 0; }
             
             string value = averageLength.ToString();
-            if (wordList.Count() < initial_size) { return "Average Length for valid words only: " + value; }
-            else { return value;  }
+            //if (wordList.Count() < initial_size) { return "Average Length for valid words only: " + value; }
+            //else { return value;  }
+            return value;
         }
     }
 }
