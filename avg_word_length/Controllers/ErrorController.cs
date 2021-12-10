@@ -21,9 +21,10 @@ namespace avg_word_length.Controllers
             //contstructor
             return new ErrorResponse
             {
-                isError = true,
+                error = "true",
                 statusCode = 404,
-                errorMessage = "404 not found"
+                text = "404 not found",
+                answer = 0
             };
 
 

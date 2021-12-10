@@ -58,7 +58,7 @@ namespace avg_word_length.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { text = "Invalid Arguments", answer = 0, StatusCode = "400", error = "true" });
+                return BadRequest(new { text = "Invalid Arguments: " + ex, answer = 0, StatusCode = "400", error = "true" });
 
             }
 
