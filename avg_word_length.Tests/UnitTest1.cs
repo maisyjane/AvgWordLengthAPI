@@ -20,7 +20,7 @@ namespace avg_word_length.Tests
         public void TestAverageLength_incorrect_parameters()
         {
             string actual_result = CalcAverageWordLengths.AverageWordLength("123456");
-            string expected_result = "Average Length for valid words only: 0";
+            string expected_result = "0";
             Assert.Equal(expected_result, actual_result);
         }
 
@@ -28,7 +28,7 @@ namespace avg_word_length.Tests
         public void TestAverageLength_incorrect_parameters_2()
         {
             string actual_result = CalcAverageWordLengths.AverageWordLength("I have made a spelling erro5");
-            string expected_result = "Average Length for valid words only: 4";
+            string expected_result = "4";
             Assert.Equal(expected_result, actual_result);
         }
 
@@ -36,14 +36,14 @@ namespace avg_word_length.Tests
         public void TestAverageLength_incorrect_parameters_3()
         {
             string actual_result = CalcAverageWordLengths.AverageWordLength("!!!???,,,");
-            string expected_result = "Average Length for valid words only: 0";
+            string expected_result = "0";
             Assert.Equal(expected_result, actual_result);
         }
         [Fact]
         public void TestAverageLength_incorrect_parameters_4()
         {
             string actual_result = CalcAverageWordLengths.AverageWordLength("Where is my phone ???");
-            string expected_result = "Average Length for valid words only: 4";
+            string expected_result = "4";
             Assert.Equal(expected_result, actual_result);
         }
         [Fact]
