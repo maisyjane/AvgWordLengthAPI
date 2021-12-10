@@ -7,8 +7,8 @@ namespace avg_word_length
 {
     public class ErrorResponse
     {
-        public string errorMessage { get; set; }
-        public bool isError { get; set; }
+        public string text { get; set; }
+        public string error { get; set; }
         public int statusCode { get; set; }
 
         public int answer { get; set; }

@@ -20,8 +20,8 @@ namespace avg_word_length.Controllers
             Response.StatusCode = 404;
             return new ErrorResponse
             {
-                errorMessage = "404 not found - No parameters supplied",
-                isError = true,
+                text = "404 not found - No parameters supplied",
+                error = "true",
                 statusCode = 404,
                 answer = 0,
                         
@@ -46,19 +46,19 @@ namespace avg_word_length.Controllers
                 if(letterCounter==0)
                 {
                     
-                    return BadRequest(new { Text = "Please Enter words, not numbers", answer = 0, StatusCode = "400", Error = "true" });
+                    return BadRequest(new { text = "Please Enter words, not numbers", answer = 0, StatusCode = "400", error = "true" });
                 }
                 else 
                 {
                     
                     string converted_result = CalcAverageWordLengths.AverageWordLength(input_text);
-                    return Ok(new { Text = input_text, answer = converted_result, StatusCode = "200", Error = "False" });
+                    return Ok(new { text = input_text, answer = converted_result, StatusCode = "200", error = "False" });
                 }
                 
             }
             catch (Exception ex)
             {
-                return BadRequest(new { Text = "Invalid Arguments", answer = 0, StatusCode = "400", Error = ex });
+                return BadRequest(new { text = "Invalid Arguments", answer = 0, StatusCode = "400", error = "true" });
 
             }
 
